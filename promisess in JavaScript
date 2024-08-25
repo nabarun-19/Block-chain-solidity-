@@ -1,0 +1,60 @@
+// //so prosises
+// // syncronous || asyncronously
+
+const { rejects } = require("assert");
+const { log } = require("console");
+
+// //example of syncronous
+
+// //  console.log("first statement")
+// // console.log("second statement")
+    console.log("third statement")
+
+
+// //example of asyncronous
+// // function runloop(){
+// //    for( let i=0; i<1e10; i++){
+     
+// //    }
+// //   console.log("loop finished")
+// // }
+
+
+// //  console.log("1st coder")
+// // runloop();
+// // console.log("why so late?")
+// //  console.log() 
+
+// console.log("start")
+
+
+// setTimeout(()=>{
+//   console.log("fetching data")
+// },2000)
+
+// console.log("end")
+
+
+// //promises
+// // pending || fulfilled || rejected
+
+// // const promise = new Promise((resolve,reject)=>
+
+
+const promiseObj = new Promise((resolve, obj)=>{
+setTimeout(()=>{
+   const status = false;
+   if(status){
+      resolve("status is true")
+   }else{
+      rejects("staus is rejected")
+   }
+})
+   
+})
+console.log("start")
+promiseObj.then((result)=>{
+   console.log(result)
+   .catch
+})
+console.log("end")
